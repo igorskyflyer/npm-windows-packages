@@ -1,6 +1,9 @@
-# Windows Packages
+<div align="center">
+<img src="https://github.com/igorskyflyer/npm-windows-packages/raw/master/assets/windows-packages.png" alt="Windows Packages - NPM Package">
+<h2>Windows Packages</h2>
 
-A Node.js module for reading the Packages registry key on Windows 10. Useful for retrieving applications installed from the Microsoft Store.
+<em>A Node.js module for reading the Packages registry key on Windows 10. Useful for retrieving applications installed from the Microsoft Store.</em>
+</div>
 
 _Uses the reg.exe, WINDOWS **ONLY!**_
 
