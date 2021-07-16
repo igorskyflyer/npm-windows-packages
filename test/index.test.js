@@ -20,19 +20,9 @@ describe('WindowsPackages', () => {
     it('should be an array', () => {
       assert.isArray(winPackages.has(['MicrosoftEdge', 'MSPaint']))
     })
-  })
 
-  describe('refresh(), count()', () => {
-    it('should be 0', () => {
-      winPackages.refresh()
-      assert.equal(winPackages.count(), 0)
-    })
-  })
-
-  describe('count()', () => {
-    it('should be > 0', () => {
-      winPackages.get()
-      assert.isAbove(winPackages.count(), 0)
+    it('should be true', () => {
+      assert.isArray(winPackages.has(['MicrosoftEdge']))
     })
   })
 })
