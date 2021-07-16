@@ -1,10 +1,16 @@
 {
 	"name": "windows-packages",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A Node.js module for reading the Packages registry key on Windows 10. Useful for retrieving applications installed from the Microsoft Store.",
 	"main": "index.js",
+	"files": [
+		"index.js",
+		"dist"
+	],
+	"types": "./dist/index.d.ts",
 	"scripts": {
-		"test": "mocha --slow 0"
+		"test": "mocha --slow 0",
+		"pub": "npm test && tsc && npm publish"
 	},
 	"repository": {
 		"type": "git",
@@ -16,7 +22,8 @@
 		"store",
 		"applications",
 		"packages",
-		"user"
+		"user",
+		"igor.dvlpr"
 	],
 	"author": "Igor Dimitrijević",
 	"license": "MIT",
@@ -25,7 +32,10 @@
 	},
 	"homepage": "https://github.com/igorskyflyer/npm-windows-packages#readme",
 	"devDependencies": {
-		"chai": "^4.2.0",
-		"mocha": "^6.2.0"
+		"chai": "^4.3.4",
+		"mocha": "^9.0.2"
+	},
+	"dependencies": {
+		"@igor.dvlpr/regkeys": "^2.0.1"
 	}
 }
