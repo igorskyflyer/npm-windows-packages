@@ -1,35 +1,55 @@
 const RegKeys = require('@igor.dvlpr/regkeys')
+const { strIsIn } = require('@igor.dvlpr/str-is-in')
 
 const packagesKey =
   'HKCR/Local Settings/Software/Microsoft/Windows/CurrentVersion/AppModel/PackageRepository/Packages'
 const registry = new RegKeys(packagesKey)
 
-let packagesCount = 0
+/**
+ * @param {string} entry
+ * @param {string} value
+ * @returns {boolean]
+ */
+function comparator(entry, value) {
+  return entry.toLowerCase().indexOf(value) > -1
+}
 
+/**
+ * Synchronously gets Windows Packages.
+ * @throws Throws an error if the host machine is not running Windows OS.
+ * @returns {string[]}
+ */
 function get() {
-  const packages = registry.get()
-
-  packagesCount = packages.length
-
-  return packages
+  return registry.get(true)
 }
 
-function has(param, caseSensitive = false) {
-  return registry.has(param, caseSensitive)
-}
+/**
+ * Synchronously checks whether the given keys are present in the WindowsPackages key.
+ * @param {string[]} packages
+ * @returns {boolean[]}
+ */
+function has(packages) {
+  if (!packages) {
+    return []
+  }
 
-function refresh() {
-  registry.clear()
-  packagesCount = 0
-}
+  const count = packages.length
 
-function count() {
-  return packagesCount
+  if (count === 0) {
+    return []
+  }
+
+  const result = []
+  const installedPackages = get()
+
+  for (let i = 0; i < count; i++) {
+    result.push(strIsIn(packages, installedPackages, comparator))
+  }
+
+  return result
 }
 
 module.exports = {
   get,
   has,
-  refresh,
-  count,
 }

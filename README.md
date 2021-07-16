@@ -1,20 +1,26 @@
 <div align="center">
-<img src="https://github.com/igorskyflyer/npm-windows-packages/raw/master/assets/windows-packages.png" alt="Windows Packages - NPM Package" width="300px">
+<img src="https://raw.githubusercontent.com/igorskyflyer/npm-windows-packages/master/assets/windows-packages.png" alt="Windows Packages - NPM Package" width="200" height="200">
 <h2>Windows Packages</h2>
 
 <em>A Node.js module for reading the Packages registry key on Windows 10. Useful for retrieving applications installed from the Microsoft Store.</em>
+
 </div>
 
-_Uses the reg.exe, WINDOWS **ONLY!**_
+<p align="center">
+Uses reg.exe, <strong>WINDOWS ONLY!</strong>
+</p>
 
-### Like it? Buy me a beer.
+<div align="center">
+<h4>Like it? Buy me a beer.</h4>
+<a href="https://www.paypal.me/igorskyflyer"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate"></a>
+</div>
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/igorskyflyer)
-<br><br>
+<br>
+<br>
 
 ### Install
 
-```
+```shell
 npm install windows-packages --save
 ```
 
@@ -24,93 +30,53 @@ npm install windows-packages --save
 
 - **Functions**
   - `get()`,<br>
-  - `has()`,<br>
-  - `refresh()`,<br>
-  - `count()`
+  - `has()`.<br>
 
  <br>
 
 ### Usage
 
-`.get(): string[]`
-
-Returns an array of sub-keys located in the Packages key.
-
+```ts
+get(): string[]
 ```
-const winPkgs = require('windows-packages');
-const packages = winPkgs.get();
 
-console.log(packages); // ['Microsoft.MicrosoftEdge_44.18362.267.0...', 'Microsoft.Microsoft3DViewer_7.1908.9012.0...',...]
+Returns an array of sub-keys located in the WindowsPackages key.
+
+```js
+const winPkgs = require('windows-packages')
+const packages = winPkgs.get()
+
+console.log(packages) // ['Microsoft.MicrosoftEdge_44.18362.267.0...', 'Microsoft.Microsoft3DViewer_7.1908.9012.0...',...]
 
 // names shortened for the sake of brevity
 ```
 
 <br>
 
-`.has(value: string, caseSensitive: boolean = false): boolean`
-
-Returns a Boolean indicating whether the provided application, (param => `value`) is installed on the system.
-
+```ts
+has(list: string[]): boolean[]
 ```
-const winPkgs = require('windows-packages');
-const has = winPkgs.has('Edge');
-
-console.log(has); // true
-```
-
-<br>
-
-`.has(list: string[], caseSensitive: boolean = false): boolean[]`
 
 Returns an array of Booleans indicating whether the entries of the parameter **list** are installed on the system.
 
+```js
+const winPkgs = require('windows-packages')
+const has = winPkgs.has(['edge', 'foobar', 'mspaint'])
+
+console.log(has) // [true, false, true]
 ```
-const winPkgs = require('windows-packages');
-const has = winPkgs.has(['edge', 'foobar', 'mspaint']);
-
-console.log(has); // [true, false, true]
-```
-
-<br>
-
-`.refresh(): void`
-
-Force refresh the info from the registry, instead of retrieving the cached data.
-
-```
-const winPkgs = require('windows-packages');
-let packages = winPkgs.get();
-
-console.log(packages);
-
-// application install method...
-
-winPkgs.refresh();
-
-packages = winPkgs.get();
-
-console.log(packages);
-```
-
-<br>
-
-### Changelog
-
-## 1.0
-
-Initial release
 
 <br>
 
 ### Development
 
-```
+```shell
 git clone https://github.com/igorskyflyer/npm-windows-packages.git
 ```
 
 followed by a,
 
-```
+```shell
 npm install
 ```
 
@@ -118,6 +84,6 @@ npm install
 
 Open the project and execute:
 
-```
-npm run test
+```shell
+npm test
 ```
