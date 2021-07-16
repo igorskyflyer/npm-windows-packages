@@ -65,3 +65,5 @@ typings/
 
 # docs.js test file
 docs.js
+
+dist/
