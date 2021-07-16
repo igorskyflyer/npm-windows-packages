@@ -1,7 +1,7 @@
 const assert = require('chai').assert
 const winPackages = require('../index')
 
-describe('WindowsPackes', () => {
+describe('WindowsPackages', () => {
   describe('get()', () => {
     it('should be an array', () => {
       assert.isArray(winPackages.get())
