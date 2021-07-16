@@ -8,7 +8,7 @@ const registry = new RegKeys(packagesKey)
 /**
  * @param {string} entry
  * @param {string} value
- * @returns {boolean]
+ * @returns {boolean}
  */
 function comparator(entry, value) {
   return entry.toLowerCase().indexOf(value) > -1
