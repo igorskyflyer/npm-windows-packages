@@ -1,6 +1,6 @@
 {
 	"name": "windows-packages",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "A Node.js module for reading the Packages registry key on Windows 10. Useful for retrieving applications installed from the Microsoft Store.",
 	"main": "index.js",
 	"files": [
