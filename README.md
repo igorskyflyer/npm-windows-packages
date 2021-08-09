@@ -16,6 +16,10 @@ Uses reg.exe, <strong>WINDOWS ONLY!</strong>
 </div>
 
 <br>
+
+✨Since `v.2.1.0` `Windows Packages` is a hybrid module that supports both CommonJS (legacy) and ES modules, thanks to [Modern Module](https://github.com/igorskyflyer/npm-modern-module).
+
+<br>
 <br>
 
 ### Install
