@@ -1,5 +1,5 @@
 const assert = require('chai').assert
-const winPackages = require('../index')
+const winPackages = require('../src/index.js')
 
 describe('WindowsPackages', () => {
   describe('get()', () => {
