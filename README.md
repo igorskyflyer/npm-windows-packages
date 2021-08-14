@@ -47,7 +47,7 @@ get(): string[]
 Returns an array of sub-keys located in the WindowsPackages key.
 
 ```js
-const winPkgs = require('windows-packages')
+import * as winPkgs from 'windows-packages'
 const packages = winPkgs.get()
 
 console.log(packages) // ['Microsoft.MicrosoftEdge_44.18362.267.0...', 'Microsoft.Microsoft3DViewer_7.1908.9012.0...',...]
@@ -64,7 +64,7 @@ has(list: string[]): boolean[]
 Returns an array of Booleans indicating whether the entries of the parameter **list** are installed on the system.
 
 ```js
-const winPkgs = require('windows-packages')
+import * as winPkgs from 'windows-packages'
 const has = winPkgs.has(['edge', 'foobar', 'mspaint'])
 
 console.log(has) // [true, false, true]
