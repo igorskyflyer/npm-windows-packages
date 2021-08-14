@@ -1,28 +1,28 @@
-const assert = require('chai').assert
-const winPackages = require('../src/index.js')
+import { assert } from 'chai'
+import { get, has } from '../src/index.js'
 
 describe('WindowsPackages', () => {
   describe('get()', () => {
     it('should be an array', () => {
-      assert.isArray(winPackages.get())
+      assert.isArray(get())
     })
 
     it('length should be > 0', () => {
-      assert.isAbove(winPackages.get().length, 0)
+      assert.isAbove(get().length, 0)
     })
 
     it('should be a string', () => {
-      assert.isString(winPackages.get()[0])
+      assert.isString(get()[0])
     })
   })
 
   describe('has()', () => {
     it('should be an array', () => {
-      assert.isArray(winPackages.has(['MicrosoftEdge', 'MSPaint']))
+      assert.isArray(has(['MicrosoftEdge', 'MSPaint']))
     })
 
     it('should be true', () => {
-      assert.isArray(winPackages.has(['MicrosoftEdge']))
+      assert.isArray(has(['MicrosoftEdge']))
     })
   })
 })
