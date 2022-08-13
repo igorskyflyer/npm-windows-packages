@@ -56,7 +56,7 @@
 		"typescript": "^4.3.5"
 	},
 	"dependencies": {
-		"@igor.dvlpr/regkeys": "^2.2.0",
+		"@igor.dvlpr/regkeys": "^2.2.2",
 		"@igor.dvlpr/str-is-in": "^2.2.0"
 	}
 }
