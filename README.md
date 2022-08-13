@@ -89,5 +89,6 @@ npm install
 Open the project and execute:
 
 ```shell
+npm i
 npm test
 ```
