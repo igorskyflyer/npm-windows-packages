@@ -10,6 +10,8 @@
 Uses reg.exe, <strong>WINDOWS ONLY!</strong>
 </p>
 
+> This package has been deprecated, please use [@igor.dvlpr/windows-packages](https://www.npmjs.com/package/windows-packages) instead.
+
 <div align="center">
 <h4>Like it? Buy me a beer.</h4>
 <a href="https://www.paypal.me/igorskyflyer"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate"></a>
