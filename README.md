@@ -10,7 +10,7 @@
 Uses reg.exe, <strong>WINDOWS ONLY!</strong>
 </p>
 
-> This package has been deprecated, please use [@igor.dvlpr/windows-packages](https://www.npmjs.com/package/windows-packages) instead.
+> This package has been deprecated, please use [@igor.dvlpr/windows-packages](https://www.npmjs.com/package/@igor.dvlpr/windows-packages) instead.
 
 <div align="center">
 <h4>Like it? Buy me a beer.</h4>
