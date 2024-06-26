@@ -26,9 +26,12 @@
 <br>
 <br>
 
-> [!WARNING]
->Uses *reg.exe*, **WINDOWS ONLY!**
->
+<blockquote align="center">
+<br>
+⚠️ Uses <em>reg.exe</em>, <strong>WINDOWS ONLY!</strong>
+<br>
+<br>
+</blockquote>
 
 <br>
 
