@@ -34,7 +34,7 @@
 	"homepage": "https://github.com/igorskyflyer/npm-windows-packages",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/igorskyflyer/npm-windows-packages.git"
+		"url": "git+https://github.com/igorskyflyer/npm-windows-packages.git"
 	},
 	"bugs": {
 		"url": "https://github.com/igorskyflyer/npm-windows-packages/issues"
