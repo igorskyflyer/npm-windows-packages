@@ -27,7 +27,7 @@
 <br>
 
 > [!WARNING]
->Uses reg.exe, **WINDOWS ONLY!**
+>Uses *reg.exe*, **WINDOWS ONLY!**
 >
 
 <br>
