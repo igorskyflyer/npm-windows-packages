@@ -4,7 +4,7 @@
 <br>
 
 > [!WARNING]
-> Uses reg.exe, <strong>WINDOWS ONLY!</strong>
+>Uses reg.exe, *WINDOWS ONLY!*
 >
 
 <br>
