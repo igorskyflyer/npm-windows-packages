@@ -2,12 +2,6 @@
 💻 A Node.js module for reading the Packages registry key on Windows 10. Useful for retrieving Windows 10 installed Store applications. 📦
 
 <br>
-
-> [!WARNING]
->Uses reg.exe, *WINDOWS ONLY!*
->
-
-<br>
 <br>
 
 <div align="center">
@@ -28,6 +22,13 @@
 		<br>
 	</blockquote>
 </div>
+
+<br>
+<br>
+
+> [!WARNING]
+>Uses reg.exe, *WINDOWS ONLY!*
+>
 
 <br>
 
