@@ -39,9 +39,13 @@
 	"bugs": {
 		"url": "https://github.com/igorskyflyer/npm-windows-packages/issues"
 	},
+	"dependencies": {
+		"@igor.dvlpr/regkeys": "^2.2.2",
+		"@igor.dvlpr/str-is-in": "^2.2.1"
+	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.8.2",
-		"@types/node": "^20.14.8",
+		"@types/node": "^20.14.9",
 		"typescript": "^5.5.2",
 		"vitest": "^1.6.0"
 	}
