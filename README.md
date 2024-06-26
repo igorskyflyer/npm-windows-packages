@@ -60,6 +60,7 @@ console.log(packages) // ['Microsoft.MicrosoftEdge_44.18362.267.0...', 'Microsof
 ```
 
 <br>
+<br>
 
 ```ts
 has(list: string[]): boolean[]
