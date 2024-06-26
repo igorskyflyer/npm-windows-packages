@@ -3,9 +3,9 @@
 
 <br>
 
-<p align="center">
-Uses reg.exe, <strong>WINDOWS ONLY!</strong>
-</p>
+> [!WARNING]
+> Uses reg.exe, <strong>WINDOWS ONLY!</strong>
+>
 
 <br>
 <br>
