@@ -4,6 +4,15 @@
 
 <br>
 
+## v1.0.2
+
+<p align="right"><em>21-Jul-2024</em></p>
+
+- **📜 docs**: add examples
+
+<br>
+<br>
+
 ## v1.0.1
 
 <p align="right"><em>21-Jul-2024</em></p>
