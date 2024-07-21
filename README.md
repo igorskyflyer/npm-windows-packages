@@ -3,7 +3,8 @@
 <br>
 
 <p align="center">
-	💻 A Node.js module for reading the Packages registry key on Windows 10+. Useful for retrieving Windows 10+ installed Store applications. 📦
+	💻 A Node.js module for reading the Packages registry key on Windows 10+.
+	Useful for retrieving Windows 10+ installed Store applications. 📦
 </p>
 
 <br>
