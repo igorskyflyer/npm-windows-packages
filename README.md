@@ -69,8 +69,6 @@ npm i "@igor.dvlpr/windows-packages"
 
 ## 🤹🏼 API
 
----
-
 
 ```ts
 get(): string[]
@@ -104,6 +102,8 @@ const hasPackages: boolean[] = has(['edge', 'foobar', 'mspaint'])
 
 console.log(hasPackages) // [true, false, true]
 ```
+
+---
 
 ## ✨ Examples
 
