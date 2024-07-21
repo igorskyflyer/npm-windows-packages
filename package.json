@@ -1,6 +1,6 @@
 {
   "name": "@igor.dvlpr/windows-packages",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "💻 A Node.js module for reading the Packages registry key on Windows 10+. Useful for retrieving Windows 10+ installed Store applications. 📦",
   "sideEffects": false,
   "engines": {
