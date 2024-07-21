@@ -107,9 +107,15 @@ console.log(hasPackages) // [true, false, true]
 
 ## ✨ Examples
 
-``
-```
+`example.ts`
+```ts
+import { get } from '@igor.dvlpr/windows-packages'
 
+const packages: string[] = get()
+
+console.log(packages) // ['Microsoft.MicrosoftEdge_44.18362.267.0...', 'Microsoft.Microsoft3DViewer_7.1908.9012.0...',...]
+
+// names shortened for the sake of brevity
 ```
 
 ---
