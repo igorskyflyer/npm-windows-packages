@@ -1,52 +1,50 @@
 {
-	"name": "@igor.dvlpr/windows-packages",
-	"version": "1.0.0",
-	"description": "💻 A Node.js module for reading the Packages registry key on Windows 10. Useful for retrieving Windows 10 installed Store applications. 📦",
-	"sideEffects": false,
-	"engines": {
-		"node": ">=20.0"
-	},
-	"types": "./dist/index.d.mts",
-	"main": "./dist/index.mjs",
-	"module": "./dist/index.mjs",
-	"files": [
-		"dist"
-	],
-	"scripts": {
-		"build": "tsc",
-		"test": "vitest --run",
-		"debug": "vitest",
-		"pub": "npm test && npm run build && npm publish --access public"
-	},
-	"keywords": [
-		"registry",
-		"windows",
-		"store",
-		"applications",
-		"packages",
-		"user",
-		"igorskyflyer",
-		"igor.dvlpr"
-	],
-	"license": "MIT",
-	"author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
-	"funding": "https://ko-fi.com/igorskyflyer",
-	"homepage": "https://github.com/igorskyflyer/npm-windows-packages",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/igorskyflyer/npm-windows-packages.git"
-	},
-	"bugs": {
-		"url": "https://github.com/igorskyflyer/npm-windows-packages/issues"
-	},
-	"dependencies": {
-		"@igor.dvlpr/regkeys": "^2.2.2",
-		"@igor.dvlpr/str-is-in": "^2.2.1"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^1.8.2",
-		"@types/node": "^20.14.9",
-		"typescript": "^5.5.2",
-		"vitest": "^1.6.0"
-	}
+  "name": "@igor.dvlpr/windows-packages",
+  "version": "1.0.1",
+  "description": "💻 A Node.js module for reading the Packages registry key on Windows 10+. Useful for retrieving Windows 10+ installed Store applications. 📦",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20.0"
+  },
+  "types": "./dist/index.d.mts",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest --run",
+    "debug": "vitest",
+    "pub": "npm test && npm run build && npm publish --access public"
+  },
+  "keywords": [
+    "registry",
+    "windows",
+    "store",
+    "applications",
+    "packages",
+    "user",
+    "igorskyflyer",
+    "igor.dvlpr"
+  ],
+  "license": "MIT",
+  "author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
+  "funding": "https://ko-fi.com/igorskyflyer",
+  "homepage": "https://github.com/igorskyflyer/npm-windows-packages",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorskyflyer/npm-windows-packages.git"
+  },
+  "bugs": {
+    "url": "https://github.com/igorskyflyer/npm-windows-packages/issues"
+  },
+  "dependencies": {
+    "@igor.dvlpr/regkeys": "^3.0.0",
+    "@igor.dvlpr/str-is-in": "^3.0.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@types/node": "^20.14.11",
+    "typescript": "^5.5.3",
+    "vitest": "^2.0.3"
+  }
 }
