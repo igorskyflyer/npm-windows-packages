@@ -1,17 +1,14 @@
 // Author: Igor Dimitrijević (@igorskyflyer)
 
-// TODO: fix dependencies
-// @ts-expect-error
 import { RegKeys } from '@igor.dvlpr/regkeys'
-// @ts-expect-error
 import { strIsIn } from '@igor.dvlpr/str-is-in'
 
 const packagesKey: string =
-	'HKCR/Local Settings/Software/Microsoft/Windows/CurrentVersion/AppModel/PackageRepository/Packages'
+  'HKCR/Local Settings/Software/Microsoft/Windows/CurrentVersion/AppModel/PackageRepository/Packages'
 const registry: RegKeys = new RegKeys(packagesKey)
 
 function comparator(entry: string, value: string) {
-	return entry.toLowerCase().indexOf(value) > -1
+  return entry.toLowerCase().indexOf(value) > -1
 }
 
 /**
@@ -20,7 +17,7 @@ function comparator(entry: string, value: string) {
  * @returns A string array containing Windows packages information.
  */
 export function get(): string[] {
-	return registry.get(true)
+  return registry.get(true)
 }
 
 /**
@@ -29,22 +26,22 @@ export function get(): string[] {
  * @returns A Boolean array of results, e.g. *[true, true, false, true]*.
  */
 export function has(packages: string[]): boolean[] {
-	if (!packages) {
-		return []
-	}
+  if (!packages) {
+    return []
+  }
 
-	const count: number = packages.length
+  const count: number = packages.length
 
-	if (count === 0) {
-		return []
-	}
+  if (count === 0) {
+    return []
+  }
 
-	const result: boolean[] = []
-	const installedPackages: string[] = get()
+  const result: boolean[] = []
+  const installedPackages: string[] = get()
 
-	for (let i = 0; i < count; i++) {
-		result.push(strIsIn(packages[i], installedPackages, comparator))
-	}
+  for (let i = 0; i < count; i++) {
+    result.push(strIsIn(packages[i], installedPackages, comparator))
+  }
 
-	return result
+  return result
 }
