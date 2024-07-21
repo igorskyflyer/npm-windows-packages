@@ -2,11 +2,11 @@
 
 <br>
 
-<p align="center">
+<div align="center">
 	💻 A Node.js module for reading the Packages registry key on Windows 10+.
-	
+	<br>
 	Useful for retrieving Windows 10+ installed Store applications. 📦
-</p>
+</div>
 
 <br>
 <br>
