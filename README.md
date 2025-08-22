@@ -102,6 +102,9 @@ const hasPackages: boolean[] = has(['edge', 'foobar', 'mspaint'])
 console.log(hasPackages) // [true, false, true]
 ```
 
+<br>
+<br>
+
 ## 🗒️ Examples
 
 `example.ts`
