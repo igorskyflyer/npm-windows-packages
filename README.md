@@ -1,46 +1,32 @@
+<div align="center">
+  <img src="https://raw.githubusercontent.com/igorskyflyer/npm-windows-packages/main/media/windows-packages.png" alt="Icon of Windows Packages" width="256" height="256">
 <h1 align="center">Windows Packages</h1>
+</div>
 
 <br>
 
 <div align="center">
-	💻 A Node.js module for reading the Packages registry key on Windows 10+.
-	<br>
-	Useful for retrieving Windows 10+ installed Store applications. 📦
+  💻 A package for reading the Packages registry key on Windows 10+. Useful for retrieving Windows 10+ installed Store applications. 📦
 </div>
 
 <br>
 <br>
 
-<div align="center">
-	<blockquote>
-		<br>
-		<h4>💖 Support further development</h4>
-		<span>I work hard for every project, including this one and your support means a lot to me!
-		<br>
-		Consider buying me a coffee. ☕
-		<br>
-		<strong>Thank you for supporting my efforts! 🙏😊</strong></span>
-		<br>
-		<br>
-		<a href="https://ko-fi.com/igorskyflyer" target="_blank"><img src="https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/ko-fi.png" alt="Donate to igorskyflyer" width="150"></a>
-		<br>
-		<br>
-		<a href="https://github.com/igorskyflyer"><em>@igorskyflyer</em></a>
-		<br>
-		<br>
-		<br>
-	</blockquote>
-</div>
+> [!CAUTION]
+> Uses `reg.exe`, **WINDOWS ONLY!**!
+>
 
 <br>
 <br>
 
-## 📃 Table of contents
+## 📃 Table of Contents
 
+- [Features](#-features)
 - [Usage](#-usage)
 - [API](#-api)
-- [Examples](#-examples)
+- [Examples](#️-examples)
 - [Changelog](#-changelog)
+- [Support](#-support)
 - [License](#-license)
 - [Related](#-related)
 - [Author](#-author)
@@ -48,23 +34,36 @@
 <br>
 <br>
 
+## 🤖 Features
+
+- 🗝 Reads Windows registry from the Packages key
+- 📋 Retrieves a full list of installed Windows packages
+- 🔍 Case‑insensitive search within package names
+- ✅ Checks presence of one or more package names
+- 📊 Returns Boolean results for each queried package
+- 🛡 Throws error if not running on the Windows OS
+- 🧹 Trims and normalises data for reliable matching
+
+<br>
+<br>
+
 ## 🕵🏼 Usage
 
+Install it by executing any of the following, depending on your preferred package manager:
 
-<br>
-
-> [!WARNING]
-> Uses `reg.exe`, **WINDOWS ONLY!**!
->
-
-<br>
-
-Install it by executing:
-
-```shell
-npm i "@igor.dvlpr/windows-packages"
+```bash
+pnpm add @igorskyflyer/windows-packages
 ```
 
+```bash
+yarn add @igorskyflyer/windows-packages
+```
+
+```bash
+npm i @igorskyflyer/windows-packages
+```
+
+<br>
 <br>
 
 ## 🤹🏼 API
@@ -77,7 +76,7 @@ get(): string[]
 Returns an array of sub-keys located in the WindowsPackages key.
 
 ```ts
-import { get } from '@igor.dvlpr/windows-packages'
+import { get } from '@igorskyflyer/windows-packages'
 
 const packages: string[] = get()
 
@@ -96,20 +95,18 @@ has(list: string[]): boolean[]
 Returns an array of Booleans indicating whether the entries of the parameter **list** are installed on the system.
 
 ```ts
-import { has } from '@igor.dvlpr/windows-packages'
+import { has } from '@igorskyflyer/windows-packages'
 
 const hasPackages: boolean[] = has(['edge', 'foobar', 'mspaint'])
 
 console.log(hasPackages) // [true, false, true]
 ```
 
----
-
-## ✨ Examples
+## 🗒️ Examples
 
 `example.ts`
 ```ts
-import { get } from '@igor.dvlpr/windows-packages'
+import { get } from '@igorskyflyer/windows-packages'
 
 const packages: string[] = get()
 
@@ -118,53 +115,73 @@ console.log(packages) // ['Microsoft.MicrosoftEdge_44.18362.267.0...', 'Microsof
 // names shortened for the sake of brevity
 ```
 
----
+<br>
+<br>
 
 ## 📝 Changelog
 
-📑 Changelog is available here: [CHANGELOG.md](https://github.com/igorskyflyer/npm-windows-packages/blob/main/CHANGELOG.md).
+📑 The changelog is available here, [CHANGELOG.md](https://github.com/igorskyflyer/npm-windows-packages/blob/main/CHANGELOG.md).
 
----
+<br>
+<br>
 
 ## 🪪 License
 
-Licensed under the MIT license which is available here, [MIT license](https://github.com/igorskyflyer/npm-windows-packages/blob/main/LICENSE).
+Licensed under the MIT license which is available here, [MIT license](https://github.com/igorskyflyer/npm-windows-packages/blob/main/LICENSE.txt).
 
----
+<br>
+<br>
+
+## 💖 Support
+
+<div align="center">
+  I work hard for every project, including this one and your support means a lot to me!
+  <br>
+  Consider buying me a coffee. ☕
+  <br>
+  <br>
+  <a href="https://ko-fi.com/igorskyflyer" target="_blank"><img src="https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/ko-fi.png" alt="Donate to igorskyflyer" width="180" height="46"></a>
+  <br>
+  <br>
+  <em>Thank you for supporting my efforts!</em> 🙏😊
+</div>
+
+<br>
+<br>
 
 ## 🧬 Related
 
-[@igor.dvlpr/odin](https://www.npmjs.com/package/@igor.dvlpr/odin)
+[@igorskyflyer/odin](https://www.npmjs.com/package/@igorskyflyer/odin)
 
 > _🔱 Odin is an Object wrapper that allows you to create objects and set their attributes - all at once! 🔺_
 
 <br>
 
-[@igor.dvlpr/str-is-in](https://www.npmjs.com/package/@igor.dvlpr/str-is-in)
+[@igorskyflyer/str-is-in](https://www.npmjs.com/package/@igorskyflyer/str-is-in)
 
 > _🧵 Provides ways of checking whether a String is present in an Array of Strings using custom Comparators. 🔍_
 
 <br>
 
-[@igor.dvlpr/strip-html](https://www.npmjs.com/package/@igor.dvlpr/strip-html)
+[@igorskyflyer/strip-html](https://www.npmjs.com/package/@igorskyflyer/strip-html)
 
 > _🥞 Removes HTML code from the given string. Can even extract text-only from the given an HTML string. ✨_
 
 <br>
 
-[@igor.dvlpr/regkeys](https://www.npmjs.com/package/@igor.dvlpr/regkeys)
+[@igorskyflyer/regkeys](https://www.npmjs.com/package/@igorskyflyer/regkeys)
 
 > _📚 An NPM package for fetching Windows registry keys. 🗝_
 
 <br>
 
-[@igor.dvlpr/jmap](https://www.npmjs.com/package/@igor.dvlpr/jmap)
+[@igorskyflyer/jmap](https://www.npmjs.com/package/@igorskyflyer/jmap)
 
 > _🕶️ Reads a JSON file into a Map. 🌻_
 
----
-
+<br>
+<br>
 <br>
 
-### 👨🏻‍💻 Author
+## 👨🏻‍💻 Author
 Created by **Igor Dimitrijević** ([*@igorskyflyer*](https://github.com/igorskyflyer/)).
