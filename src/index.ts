@@ -1,7 +1,7 @@
 // Author: Igor Dimitrijević (@igorskyflyer)
 
-import { RegKeys } from '@igor.dvlpr/regkeys'
 import { strIsIn } from '@igor.dvlpr/str-is-in'
+import { RegKeys } from '@igorskyflyer/regkeys'
 
 const packagesKey: string =
   'HKCR/Local Settings/Software/Microsoft/Windows/CurrentVersion/AppModel/PackageRepository/Packages'
